@@ -1,0 +1,36 @@
+body {
+    max-width:80vw; 
+    max-width:800px; /*625px*/
+    margin:auto; 
+    
+    
+    /* background-color: #070313; */
+    /*#1c0d04;*/  /* #04060a; */  /* Old value: #15202b; */ /* #0d1117 == Github dark background color. 2021-03*/ /* #04060a == Darker github background color. 2021-03 */
+    
+    
+    /* color: #8abfbf; */   /* #97a7a7; */   /* #7d7979; */   /* #454545; */   /*white; */   /* #d9d9d9 maybe? */
+    font: 18px/22px 'Liberation mono';
+    /*color: lightcyan;*/
+}
+
+img {
+    max-width:100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #c55353;  /* #8a2c2c; */  /* lightsalmon; */
+}
+
+/* unvisited link */
+a:link {
+  color: #0077aa;  /* #b8e13b; */
+}
+
+a:visited {
+    color: #ac0049;
+    /* #84395e; */  /* #75284e; */ /* #CA1A70; */ /* olivedrab; */
+}
+
+.date-name {
+    font-size: 12px;
+}

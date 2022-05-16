@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="./codehilite.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" 
+      type="image/png" 
+      href="./img/favicon-32x32.png">
+<style>
+
+</style>
+
+</head>
+
+<body>
+
+<div class="date-name">Last update: 2020-12-22 | Armağan Salman</div>
+	
+<h2>Essence of Progress Bars</h2>
+
+<p>A progress bar tells how much of a computation is completed. 
+It can be updated periodically or it can count the size of processed chunks. 
+To update your progress bar, you must either have the current total progress 
+or the amount to increase since the last update.</p>
+<p><a href="https://github.com/tqdm/tqdm">tqdm</a> is a progress bar package for Python. Here is a nice gif showing several features of tqdm: <a href="https://raw.githubusercontent.com/tqdm/tqdm/master/images/tqdm.gif">link to gif</a></p>
+<p>Below is an example which you can find on the main page of <a href="https://github.com/tqdm/tqdm">tqdm</a>.
+Here we are giving the update amount (using pbar.update) to update the progress bar:</p>
+<div class="codehilite"><pre><span></span><code><span class="k">with</span> <span class="n">tqdm</span><span class="p">(</span><span class="n">total</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span> <span class="k">as</span> <span class="n">pbar</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+        <span class="n">sleep</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
+        <span class="n">pbar</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</code></pre></div>
+
+
+<p>Giving the current total progress would look something like this:
+(This example doesn't run because tqdm doesn't give an option to use
+total progress in update. The example is given only for illustrative
+purposes.)</p>
+<div class="codehilite"><pre><span></span><code><span class="k">with</span> <span class="n">tqdm</span><span class="p">(</span><span class="n">total</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span> <span class="k">as</span> <span class="n">pbar</span><span class="p">:</span>
+        <span class="n">current</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+        <span class="n">sleep</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
+        <span class="n">current</span> <span class="o">+=</span> <span class="mi">10</span>
+        <span class="n">pbar</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">current_total</span><span class="o">=</span><span class="n">current</span><span class="p">)</span>
+</code></pre></div>
+
+<img src="./img/hunter x hunter-chrollo-hisoka-illumi-laugh.jpg" alt="Hunter x Hunter laugh">
+
+<div class="date-name">Created on: 2020-07-03 | Armağan Salman</div>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+body {
+    max-width:80vw; 
+    max-width:800px; /*625px*/
+    margin:auto; 
+    
+    
+    background-color: #0F0E0E;
+    /*#1c0d04;*/  /* #04060a; */  /* Old value: #15202b; */ /* #0d1117 == Github dark background color. 2021-03*/ /* #04060a == Darker github background color. 2021-03 */
+    
+    
+    color: #EEEEEE;
+    font: 18px/22px 'Liberation mono';
+    /*color: lightcyan;*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+
+    color: #c41515; /* #541212; */ /* #8a2c2c; */  /* lightsalmon; */
+}
+
+img {
+    max-width:100%;
+}
+
+a:link {
+    /* unvisited link */
+    color: #8B9A46;
+    
+}
+
+a:visited {
+    color: #a82d60;
+    /* #AC0049; */
+    /* #84395e; */
+    /* #75284e; */
+    /* #CA1A70; */
+    /* olivedrab; */
+}
+
+.date-name {
+    font-size: 12px;
+}
+
+
+/* Dark color palette: https://colorhunt.co/palette/0f0e0e5412128b9a46eeeeee */
