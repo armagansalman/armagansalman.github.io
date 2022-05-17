@@ -42,5 +42,7 @@ a:visited {
     font-size: 12px;
 }
 
-
+.main-page-ref {
+  text-align: center;
+}
 /* Dark color palette: https://colorhunt.co/palette/0f0e0e5412128b9a46eeeeee */
