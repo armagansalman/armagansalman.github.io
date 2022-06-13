@@ -1,0 +1,37 @@
+{
+  "references": [
+    {
+      "ref": 1,
+      "name-url": "dusuncenin-gucu.james-allen",
+      "description": "As a Man Thinketh kitap çevirisi (Armağan Salman)"
+    },
+    {
+      "ref": 2,
+      "name-url": "insanin-dusundugu-sekilde.james-allen",
+      "description": "As a Man Thinketh kitap çevirisi (Armağan Salman)"
+    },
+    {
+      "ref": 3,
+      "name-url": "various-references",
+      "description": "Public paylaşımlar için bir webpage"
+    },
+    {
+      "ref": 4,
+      "name-url": "notes-to-myself",
+      "description": "Önemli/önemsiz not almak istediğim şeyler"
+    }
+  ],
+  
+  "alt_refs": {
+    "1": {
+      "ref": 1,
+      "name-url": "dusuncenin-gucu.james-allen",
+      "description": "As a Man Thinketh kitap çevirisi (Armağan Salman)"
+    },
+    "2": {
+      "ref": 2,
+      "name-url": "insanin-dusundugu-sekilde.james-allen",
+      "description": "As a Man Thinketh kitap çevirisi (Armağan Salman)"
+    }
+  }
+}
