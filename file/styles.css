@@ -10,7 +10,7 @@ body {
     
     
     color: #acd39a; /* Text color */ /* #EEEEEE; */ /* lightcyan; */
-    font: 22px 'Liberation mono';
+    font: 21px 'Liberation mono';
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -38,8 +38,14 @@ a:visited {
     /* olivedrab; */
 }
 
-.date-name {
-    font-size: 12px;
+.date-time-iso-8601 {
+    font-size: 23px;
+    color: salmon;
+    /*
+        Datetime-Extended Notation
+        yyyy-mm-ddThh:mm:ss.fff+|-hhmm
+        2008-09-15T15:53:00+04:30
+    */
 }
 
 .main-page-ref {
