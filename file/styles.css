@@ -11,6 +11,8 @@ body {
     
     color: #acd39a; /* Text color */ /* #EEEEEE; */ /* lightcyan; */
     font: 21px 'Liberation mono';
+    
+    word-wrap: break-word; /* wraps text to next line if line is too long. */
 }
 
 h1, h2, h3, h4, h5, h6 {
