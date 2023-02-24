@@ -1,0 +1,12 @@
+{
+    {
+        "personal_domain" = "armagansalman.one",
+        "id_tag_tuple_list" = [
+            [0, "id_tag_tuples.json"]
+        ],
+        
+        "id_ref_tuple_list" = [
+            [0, ]
+        ]
+    }
+}

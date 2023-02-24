@@ -1,0 +1,19 @@
+(-
+  (t_utf-8 ; "char string") == "char string"
+-)
+
+
+(t_map
+  ;("file_id" ; "file_2")
+  ;("file_name" ; "reference-pass.html")
+  ;("old_file_uri" ; "armagansalman.one/file/reference-pass.html")
+  ;("last_info_update" ; (t_iso-8601; "2022-05-08T12:47:50"))
+)
+
+
+(t_map
+  ;("file_id" ; "file_1")
+  ;("file_name" ; "styles.css")
+  ;("file_uri" ; "armagansalman.one/file/styles.css")
+  ;("last_info_update" ; (t_iso-8601; "2022-05-08T12:47:45"))
+)

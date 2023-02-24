@@ -1,0 +1,85 @@
+body {
+    max-width:80vw; 
+    max-width:900px;  /*625px*/
+    margin:auto; 
+    
+    
+    background-color: #040111;
+    /* #0F0E0E; */
+    /*#1c0d04;*/  /* #04060a; */  /* Old value: #15202b; */ /* #0d1117 == Github dark background color. 2021-03*/ /* #04060a == Darker github background color. 2021-03 */
+    
+    
+    color: #acd39a; /* Text color */ /* #EEEEEE; */ /* lightcyan; */
+    font: 21px 'Liberation mono';
+    
+    word-wrap: break-word; /* wraps text to next line if line is too long. */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+
+    color: #de1515;
+    /* #c41515; */ /* #541212; */ /* #8a2c2c; */  /* lightsalmon; */
+}
+
+img {
+    max-width:100%;
+}
+
+a:link {
+    /* unvisited link */
+    color: #accf0d;
+    
+    /* #97b511; */ /* #8B9A46; */
+}
+
+a:visited {
+    color: #a78f04;
+    
+    /* #806e04; */
+    /* #a82d60; */
+    /* #AC0049; */
+    /* #84395e; */
+    /* #75284e; */
+    /* #CA1A70; */
+    /* olivedrab; */
+}
+
+ul { 
+	list-style-type: "☀";
+}
+
+/*
+ul { 
+	list-style-type: "☀"; 
+	filter: invert(80%);
+}
+* */
+/* list-style-type; Sets the marker to a ☀ character */
+
+/* ul { list-style-type: "🔔"; } */
+/* Sets the marker to a 🔔 emoji character */
+
+.date-time-iso-8601 {
+    /* text-align: center; */
+    font-size: 23px;
+    color: salmon;
+    /*
+        Datetime-Extended Notation
+        yyyy-mm-ddThh:mm:ss.fff+|-hhmm
+        2008-09-15T15:53:00+04:30
+    */
+}
+
+.small-text {
+    font-size: 15px;
+}
+
+.main-page-ref {
+  text-align: center;
+}
+/* Dark color palette: https://colorhunt.co/palette/0f0e0e5412128b9a46eeeeee */
+
+.tag-list {
+    font-size: 18px;
+}

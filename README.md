@@ -1,1 +1,2 @@
-# armagansalman.github.io
+# blog
+My personal blog
