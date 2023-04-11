@@ -4,49 +4,60 @@ SEPARATOR-CHAR = ';'
 QUOTE-CHAR = '"'
 
 (? ;"CKAV Specification url" ;"https://github.com/armagansalman/CKAV")
+(? ;"Using CKAV semver=0.3.0")
 
 
-(typedef ;"t.uwhl"
+(?.typedef ;t.uwhole
 	;?.t.num.whole.{prop.uniq}
 )
 
-(typedef ;"t.VID"
-	;"t.uwhl"
+(?.typedef ;t.VacantID
+	;t.uwhole
 )
-(typedescribe ;"t.VID"
+(?.typedescribe ;t.VacantID
 	;"Unused ref id. (1 element) = Vacant-Reference-ID"
 )
 
-(typedef ;TID.desc-ref
-	;"t.uwhl"
+(?.typedef ;TID.desc-ref
+	;t.uwhole
 	;?.t.str.utf-8
 	;?.t.str.utf-8
 )
-(typedescribe ; TID.desc-ref
+(?.typedescribe ; TID.desc-ref
 	;"Reference unique id"
 	;"Reference description"
 	;"Path to reference"
 )
 
-(typedef ;T.mapping
+(?.typedef ;T.mapping
 	;t.any
 	;t.any
 )
-(typedescribe ; T.mapping
+(?.typedescribe ; T.mapping
 	;"key"
 	;"value"
-	;"A mapping from key to value. (2 elements)"
+	;"DESCRIPTION: A mapping from key to value. (2 elements)"
 )
 
+(?.typedef ;T.func
+	;t.any
+	;t.any
+)
+(?.typedescribe ; T.func
+	;"function"
+	;"input data"
+	;"DESCRIPTION: given a type that contains 2 typed data, represents the 
+        2nd data with given inputs as 1st data."
+)
 
 (T.mapping ; "ROOT" ; "armagansalman.one")
 
-(TID.desc-ref ; 1 ; "dusuncenin-gucu.james-allen" ; ROOT/ref/1/name/dusuncenin-gucu.james-allen/)
-(TID.desc-ref ; 2 ; "insanin-dusundugu-sekilde.james-allen" ; ROOT/ref/2/name/insanin-dusundugu-sekilde.james-allen/)
-(TID.desc-ref ; 3 ; "T.B.Y. Tasarlanmış Bilge Yardımcı" ; ROOT/ref/R_3/R_3.html?desc=T.B.Y.&create-date=2023-02-03")
-(TID.desc-ref ; 5 ; "various-references" ; "ROOT/ref/R_5/R_5.html?desc=References&create-date=2022-11")
-(TID.desc-ref ; 7 ; "Personal private page" ; "ROOT/ref/R_7/")
-(TID.desc-ref ; 8 ; "Not My Work Links" ; "ROOT/ref/R_8/R_8.html?desc=Not-My-Work&create-date=2023-01")
+(TID.desc-ref ; 1 ; "dusuncenin-gucu.james-allen" ; (T.func ; T.mapping ; "ROOT")ref/1/name/dusuncenin-gucu.james-allen/)
+(TID.desc-ref ; 2 ; "insanin-dusundugu-sekilde.james-allen" ; (T.func ; T.mapping ; "ROOT")ref/2/name/insanin-dusundugu-sekilde.james-allen/)
+(TID.desc-ref ; 3 ; "T.B.Y. Tasarlanmış Bilge Yardımcı" ; (T.func ; T.mapping ; "ROOT")ref/R_3/R_3.html?desc=T.B.Y.&create-date=2023-02-03")
+(TID.desc-ref ; 5 ; "various-references" ; "(T.func ; T.mapping ; "ROOT")ref/R_5/R_5.html?desc=References&create-date=2022-11")
+(TID.desc-ref ; 7 ; "Personal private page" ; "(T.func ; T.mapping ; "ROOT")ref/R_7/")
+(TID.desc-ref ; 8 ; "Not My Work Links" ; "(T.func ; T.mapping ; "ROOT")ref/R_8/R_8.html?desc=Not-My-Work&create-date=2023-01")
 
 (T.vacant ; 3)
 (T.vacant ; 4)
