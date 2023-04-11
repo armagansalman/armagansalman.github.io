@@ -59,6 +59,5 @@ QUOTE-CHAR = '"'
 (TID.desc-ref ; 7 ; "Personal private page" ; "(T.func ; T.mapping ; "ROOT")ref/R_7/")
 (TID.desc-ref ; 8 ; "Not My Work Links" ; "(T.func ; T.mapping ; "ROOT")ref/R_8/R_8.html?desc=Not-My-Work&create-date=2023-01")
 
-(T.vacant ; 3)
-(T.vacant ; 4)
-(T.vacant ; 6)
+(t.VacantID ; 4)
+(t.VacantID ; 6)
