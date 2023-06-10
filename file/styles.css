@@ -9,7 +9,7 @@ body {
     /*#1c0d04;*/  /* #04060a; */  /* Old value: #15202b; */ /* #0d1117 == Github dark background color. 2021-03*/ /* #04060a == Darker github background color. 2021-03 */
     
     
-    color: #acd39a; /* Text color */ /* #EEEEEE; */ /* lightcyan; */
+    color: #f6ffde; /* #acd39a; */ /* Text color */ /* #EEEEEE; */ /* lightcyan; */
     font: 21px 'Liberation mono';
     
     word-wrap: break-word; /* wraps text to next line if line is too long. */
