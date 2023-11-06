@@ -45,9 +45,12 @@ a:visited {
     /* olivedrab; */
 }
 
+/*
 ul { 
+	list-style-type: "☉";
 	list-style-type: "☀";
 }
+*/
 
 /*
 ul { 
