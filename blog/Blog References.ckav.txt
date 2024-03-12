@@ -1,0 +1,61 @@
+text/ckav; charset=UTF-8
+
+SEPARATOR-CHAR = ';'
+QUOTE-CHAR = '"'
+
+(? ;"CKAV Specification url" ;"https://github.com/armagansalman/CKAV")
+(? ;"Using CKAV semver=0.3.0")
+
+
+(?.typedef ;t.uwhole
+	;?.t.num.whole.{prop.uniq}
+)
+
+(?.typedef ;t.VacantID
+	;t.uwhole
+)
+(?.typedescribe ;t.VacantID
+	;"Unused ref id. (1 element) = Vacant-Reference-ID"
+)
+
+(?.typedef ;TID.desc-ref
+	;t.uwhole
+	;?.t.str.utf-8
+	;?.t.str.utf-8
+)
+(?.typedescribe ; TID.desc-ref
+	;"Reference unique id"
+	;"Reference description"
+	;"Path to reference"
+)
+
+(?.typedef ;T.mapping
+	;t.any
+	;t.any
+)
+(?.typedescribe ; T.mapping
+	;"key"
+	;"value"
+	;"DESCRIPTION: A mapping from key to value. (2 elements)"
+)
+
+(?.typedef ;T.func
+	;t.any
+	;t.any
+)
+(?.typedescribe ; T.func
+	;"function"
+	;"input data"
+	;"DESCRIPTION: given a type that contains 2 typed data, represents the 
+        2nd data with given inputs as 1st data."
+)
+
+(T.mapping ; 'ROOT' ; "armagansalman.one")
+
+(TID.desc-ref ; 1 
+; "Bubble sort" 
+; "(T.func ; T.mapping ; 'ROOT')/blog/bubble-sort/R_1.html")
+
+
+
+(? ; "<li id="urn:F-1:8:2023-04-22:1"> <!-- F-1 == ref-num:date:order-of-element -->")
